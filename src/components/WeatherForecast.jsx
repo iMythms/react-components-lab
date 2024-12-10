@@ -44,11 +44,11 @@ const WeatherForecast = () => {
 		},
 	]
 	return (
-		<div className="weather flex gap-6 justify-evenly text-white">
+		<div className="flex flex-col xl:flex-row gap-6 xl:gap-6 items-center justify-center xl:justify-evenly text-white">
 			{weatherForecasts.map((forecast, index) => (
 				<div
 					key={index}
-					className="flex flex-col items-center gap-2 bg-slate-800 rounded-2xl p-6 w-96 my-16 
+					className="flex flex-col items-center gap-2 bg-slate-800 rounded-2xl p-6 w-96 
                       bg-clip-padding bg-opacity-60 border border-gray-100 border-opacity-15"
 				>
 					<h2 className="text-lg font-medium">{forecast.day}</h2>
